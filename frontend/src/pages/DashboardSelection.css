@@ -1,0 +1,68 @@
+/* src/pages/DashboardSelection.css */
+.dashboard-selection {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f4f4f4, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .selection-title {
+    font-size: 2.5rem;
+    color: #e8b028;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .selection-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .input-field {
+    border: 2px solid #e8b028;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .role-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .role-btn {
+    flex: 1;
+    background-color: #e8b028;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .role-btn:hover {
+    background-color: #c58123;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  

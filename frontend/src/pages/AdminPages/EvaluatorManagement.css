@@ -1,0 +1,139 @@
+/* src/pages/AdminPages/EvaluatorManagement.css */
+.evaluator-management {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 36px;
+    color: #e8b028;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .overview-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .evaluator-list {
+    margin-top: 20px;
+  }
+  
+  .search-filter {
+    margin-bottom: 10px;
+  }
+  
+  .evaluator-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .evaluator-table th,
+  .evaluator-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .action-buttons button {
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 12px;
+  }
+  
+  .edit-btn {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  .assign-btn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .approve-btn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .deactivate-btn {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 15px;
+    color: #e8b028;
+  }
+  
+  .modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

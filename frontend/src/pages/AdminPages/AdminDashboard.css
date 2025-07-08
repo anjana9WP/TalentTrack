@@ -1,0 +1,66 @@
+/* src/pages/AdminPages/AdminDashboard.css */
+.dashboard-content {
+  padding: 20px;
+  background: #ffffff; 
+  min-height: 100vh;
+  border-radius: 10px;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  color: #e8b028;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overview-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e8b028;
+}
+
+.charts-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.chart-card h3 {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  color: #e8b028;
+}

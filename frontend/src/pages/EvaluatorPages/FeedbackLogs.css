@@ -1,0 +1,58 @@
+/* src/pages/EvaluatorPages/FeedbackLogs.css */
+.feedback-logs {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background: #ffffff;
+    min-height: 100vh;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    color: #e8b028;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-filter {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input-field {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .logs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .log-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .log-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .log-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .log-card p {
+    margin: 5px 0;
+    color: #666;
+  }
+  

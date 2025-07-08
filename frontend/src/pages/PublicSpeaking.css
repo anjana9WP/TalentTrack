@@ -1,0 +1,160 @@
+/* src/pages/PublicSpeaking.css */
+.public-speaking {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.phero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #f0ad4e;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.phero-content {
+  flex: 1;
+  text-align: left;
+  z-index: 1;
+}
+
+.phero-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.phero-subtitle {
+  font-size: 1.5rem; /* Adjust subtitle size */
+  font-weight: 300;
+  color: #fff;
+}
+
+.phero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+}
+
+.phero-image {
+  max-width: 100%;
+  height: 100%; /* Ensure the image fills the height of the hero section */
+  object-fit: cover; /* Maintain aspect ratio while filling */
+  border-radius: 20px;
+}
+
+/* Tips Section */
+.ptips-section {
+  padding: 60px;
+  text-align: center;
+}
+
+.ptips-box {
+  border: 2px solid #e8b028;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ptips-list {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333;
+}
+
+.ptips-list li {
+  margin-bottom: 10px;
+}
+
+/* Video Upload Section */
+.video-upload {
+  padding: 80px 80px 20px 80px;
+  text-align: center;
+}
+
+.back-placeholder {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 60px 100px 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.upload-title {
+  font-size: 3rem;
+  color: #e8b028; /* Yellow color */
+  margin-bottom: 20px;
+}
+
+.upload-area {
+  border: 4px dashed #a19f9f;
+  border-radius: 20px;
+  background-color: #eaeaea;
+  padding: 180px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-area p {
+  font-size: 18px;
+  color: #484747;
+  margin-bottom: 20px;
+}
+
+.upload-area.dragging {
+  background-color: #b1b1b1;
+}
+
+.upload-area input {
+  display: none;
+}
+
+.upload-area button {
+  margin-top: 10px;
+}
+
+/* Title Input */
+.title-input {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.title-input .MuiTextField-root {
+  max-width: 500px;  /* Limit width */
+  margin: 0 auto;    /* Center the input box */
+  display: block;    /* Make sure it behaves like a block element */
+}
+
+/* Video Player Section */
+.video-player {
+  padding: 200px;
+  text-align: center;
+}
+
+.video-wrapper {
+  border-radius: 10px;
+  margin-top: 50px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

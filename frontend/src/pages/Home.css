@@ -1,0 +1,296 @@
+/* src/pages/Home.css */
+.home {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust alignment */
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0ad4e;
+    min-height: 80vh; /* Ensure the section has a minimum height */
+  }
+  
+  .hero-content {
+    flex: 1;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 5rem; /* Larger title */
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px; /* Less space below the title */
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .hero-buttons .get-started,
+  .hero-buttons .learn-more {
+    padding: 20px 40px; /* Bigger buttons */
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px; /* More rounded corners */
+    border: 2px solid #e8b028;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .hero-buttons .get-started {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .hero-buttons .learn-more {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .hero-buttons .get-started:hover,
+  .hero-buttons .learn-more:hover {
+    opacity: 0.8;
+  }
+  
+  .hero-image-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Stick the image to the bottom */
+    overflow: hidden;
+  }
+  
+  .hero-image-shape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f0ad4e;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease; /* Smooth transition for the scroll effect */
+  }
+  
+  /* Info Section */
+  .info-section {
+    padding: 60px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    max-width: 800px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .info-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .info-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    align-items: center;
+    gap: 20px; /* Space between each stat */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center align text */
+    width: 200px; /* Set a fixed width */
+  }
+  
+  .stat p {
+    font-size: 14px; /* Smaller text size */
+    margin-top: 10px;
+    line-height: 1.2; /* Adjust line height for better readability */
+  }
+  
+  .separator {
+    width: 1px;
+    height: 120px;
+    background-color: #e8b028;
+  }
+  
+  /* ProgressBar Styles */
+  .progress-bar {
+    margin: 0 auto 10px; /* Center the progress bar and add margin */
+  }
+  
+  
+/* Additional Sections */
+.additional-sections {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Reduced spacing between each section */
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between image and text */
+    max-width: 1000px; /* Center align and fixed width */
+    width: 100%; /* Ensure full width of container */
+  }
+  
+  .section.reverse {
+    flex-direction: row; /* Keep the default direction */
+  }
+  
+  .section-image {
+    flex: 1;
+    border-radius: 20px;
+    max-width: 400px; /* Image size */
+    width: 100%; /* Ensure image fills the space */
+    height: auto;
+  }
+  
+  .section-text {
+    flex: 1;
+    text-align: left;
+    max-width: 400px; /* Ensure the text section also has a max width */
+  }
+  
+  .section.reverse .section-text {
+    text-align: right; /* Right align text in the reverse section */
+  }
+  
+  .section.reverse .section-text h3,
+  .section.reverse .section-text p {
+    margin-right: 0; /* Remove any default right margin */
+    margin-left: auto; /* Auto left margin for alignment */
+  }
+  
+  .section-text h3 {
+    font-size: 38px; /* Larger header text */
+    font-weight: 800; /* Make the header more bold */
+    margin-bottom: 15px;
+    line-height: 1.2; /* Tighter line spacing */
+  }
+  
+  .section-text p {
+    font-size: 16px; /* Increase font size */
+    color: #888; /* Lighter font color */
+    line-height: 1.4;
+    font-weight: 300; /* Light font weight */
+    margin-top: 5px; /* Add some spacing */
+  }
+  
+  .section-separator {
+    width: 200px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #e8b028;
+    margin: 30px 0; /* Spacing for separation */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section.reverse {
+      flex-direction: column;
+    }
+  
+    .section-text,
+    .section.reverse .section-text {
+      text-align: center;
+    }
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 150px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  }
+  
+  .fade-in-element.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+.notification-banner {
+    background-color: #e8b028;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .notification-banner:hover {
+        background-color: #c58123;
+    }

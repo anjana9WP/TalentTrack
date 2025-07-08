@@ -1,0 +1,102 @@
+/* src/components/Navbar.css */
+.navbar {
+  width: 100vw; /* Ensure the navbar spans the full width of the viewport */
+  max-width: 100%; /* Ensure it does not overflow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px ;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin: 0; /* Remove any margins that could constrain the width */
+}
+
+.navbar-logo {
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e8b028;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+  text-align: center;
+}
+
+.navbar-links a:hover {
+  background-color: #f0f0f0;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #e8b028;
+}
+
+.get-started-btn {
+  padding: 10px 20px;
+  background-color: #e8b028;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #c58123;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    width: 100%;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+}

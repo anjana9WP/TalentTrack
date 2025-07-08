@@ -1,0 +1,41 @@
+/* src/components/EvaluatorSidebar.css */
+.sidebar {
+    background: #f9f9f9;
+    padding: 40px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e8b028;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-links li {
+    margin: 10px 0;
+  }
+  
+  .sidebar-links a {
+    text-decoration: none;
+    color: #979797;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-links a:hover {
+    background-color: #e8b028;
+    color: #fff;
+  }
+  

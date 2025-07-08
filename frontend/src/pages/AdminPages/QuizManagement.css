@@ -1,0 +1,118 @@
+/* src/pages/AdminPages/QuizManagement.css */
+
+.quiz-management {
+  padding: 3rem;
+  width: 95%;
+  max-width: 1600px;
+  margin: 2rem auto;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #fff8e1, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.qm-title {
+  margin-bottom: 2rem;
+  color: #d4af37;
+  font-weight: 800;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+.question-block {
+  padding: 2rem;
+  padding-bottom: 3.5rem; /* extra space for the delete button */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  border-left: 5px solid #f0ad4e;
+}
+
+.question-block .delete-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.qm-actions {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.add-btn {
+  background-color: #f0ad4e;
+  color: white;
+  font-weight: bold;
+  min-width: 40px;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #e59d2a;
+}
+
+.submit-btn {
+  font-weight: bold;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.qm-active-title {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #d4af37;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px dashed #f0ad4e;
+  padding-bottom: 0.5rem;
+}
+
+.scenario-preview {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.scenario-preview:hover {
+  transform: scale(1.02);
+}
+
+.paragraph-preview {
+  font-style: italic;
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+.scenario-delete-btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}

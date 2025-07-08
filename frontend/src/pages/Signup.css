@@ -1,0 +1,136 @@
+/* src/pages/Signup.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+.signup-page {
+  width: 100vw;
+  min-height: 100vh; /* Minimum height to cover the full view height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top */
+  padding-top: 20px; /* Add some padding to the top */
+}
+
+.signup-form-container {
+  padding: 40px;
+  width: 100%;
+  max-width: 300px; /* Increase max-width to make the container larger */
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 25px;
+  width: 100%; /* Make sure input group takes full width */
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.su-input-field {
+  width: 100%; /* Make sure input field takes full width */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.signup-btn {
+  width: 100%; /* Make sure button takes full width */
+  padding: 15px;
+  background-color: #e8b028;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.signup-btn:hover {
+  background-color: #c58123;
+}
+
+.continue-with {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-weight: 600;
+  color: #666;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.google-btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.back-button {
+  align-self: flex-start; /* Align the back button to the left */
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #e8b028;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
