@@ -1,0 +1,35 @@
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    command: ["mongod", "--quiet"]  # ✅ Suppress Mongo's verbose logs
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    volumes:
+      - ./uploads:/app/uploads       # ✅ for code that writes to ./uploads
+      - ./uploads:/uploads           # ✅ for static file serving from /uploads
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/curtintalenttrack
+      - NODE_ENV=development
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
