@@ -28,10 +28,15 @@ MERN Stack E-Learning Web App to improve communication skills
 Default Credentials
 Use these test accounts to explore the system functionality across different roles.
 Admin Accounts:
-• Email: newadmin@gmail.com Password: nwead123
+- Email: newadmin@gmail.com  
+- Password: nwead123
 Evaluator Accounts:
-• Email: eval1@gmail.com Password: evalPWDacc1
-• Email: TestEval@gmail.com Password: teval123
+- Email: eval1@gmail.com
+- Password: evalPWDacc1
+- Email: TestEval@gmail.com
+- Password: teval123
 Regular User Accounts:
-• Email: awp@gmail.com Password: userACC123
-• Email: td@gmail.com Password: td15DFGD
+- Email: awp@gmail.com
+- Password: userACC123
+- Email: td@gmail.com
+- Password: td15DFGD
